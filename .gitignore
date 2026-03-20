@@ -1,0 +1,39 @@
+# Ignore everything by default so uploads stay code-only.
+*
+
+# Keep repository metadata and docs.
+!.gitignore
+!README.md
+
+# Keep code directories.
+!evaluate/
+!evaluate/**/*.py
+!inference/
+!inference/**/*.py
+!scripts/
+!scripts/**/*.py
+!steering_scripts/
+!steering_scripts/**/*.py
+
+# Keep lightweight helper files under model_weights, but not weights.
+!model_weights/
+model_weights/*
+!model_weights/README.md
+!model_weights/download_model_weights.py
+
+# Never upload local environments, caches, secrets, or generated artifacts.
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.log
+secret.json
+backup/
+data_inference/
+data_raw/
+data_train/
+inference/env/
+inference_results/
+probes/
+steering_data/
+steering_vector/
