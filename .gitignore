@@ -1,0 +1,46 @@
+# Secrets — never commit real API keys
+secret.json
+
+# Python caches
+__pycache__/
+*.py[cod]
+*.egg-info/
+.ipynb_checkpoints/
+
+# Local virtual environments
+.venv/
+venv/
+env/
+
+# Model weights and steering-vector payloads (regenerated locally)
+model_weights/
+steering_vector/**/*.pt
+*.pt
+*.safetensors
+
+# Input datasets (kept out of the code-only repo)
+data_raw/
+data_train/
+data_inference/
+steering_/*.json
+
+# Generated results, evaluations, and figure images (analysis scripts are kept)
+inference_results/
+inference_results_qrsubspace/
+results/
+logs/
+
+# Reports / spreadsheets / images / logs
+*.pdf
+*.png
+*.jpg
+*.jpeg
+*.xlsx
+*.log
+*.out
+*.err
+
+# Merged/generated JSON artifacts under the figures tree (keep only *.py there)
+evaluate/figures/**/*.json
+evaluate/figures/**/*.csv
+evaluate/figures/**/*.summary.json
